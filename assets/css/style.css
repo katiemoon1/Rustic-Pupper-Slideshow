@@ -7,29 +7,12 @@ body {
     margin-top: 4rem;
 }
 
-/* .container {
+.photos {
     position: relative;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box; 
+    z-index: 1;
 }
 
-.photo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.pupper {
+    position: absolute;
+    z-index: 3;
 }
-
-/* 
-#picture-holder {
-    align-content: center;
-} */
-
-/* .columns {
-    width: 100%;
-    float: left;   
-    box-sizing: border-box; 
-} */
