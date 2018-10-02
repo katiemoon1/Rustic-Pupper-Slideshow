@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
 // Array with pictures of Lux
-var luxPhotos = ["assets/images/lux-1.jpg", "assets/images/lux-2.jpg", "assets/images/lux-3.jpg", "assets/images/lux-4.jpg", "assets/images/lux-5.jpg", "assets/images/lux-6.jpg"];
+var luxPhotos = ["assets/images/lux-1.jpg", "assets/images/lux-2.jpg", "assets/images/lux-3.jpg", "assets/images/lux-4.jpg", "assets/images/lux-5.jpg", "assets/images/lux-7.jpg"];
 
 // Setting up the counter variable
 var count = 0;
@@ -10,12 +10,12 @@ var count = 0;
 var showPicture;
 
 // Creating a function to show the pictures
-var displayPictures = function () {
-    $(".pupper").html(luxPhotos[count]);
+var displayPictures = function() {
+    $(".pupper-div").html("<img src=" + luxPhotos[count] + " width='400px'>");
 }
 
 // Creating a function to go to the next picture after a set interval
-var nextPicture = function () {
+var nextPicture = function() {
     count++;
     setTimeout(displayPictures, 2000);
 
@@ -25,8 +25,13 @@ var nextPicture = function () {
 }
 
 // Creating a function to start the slideshow
-var startShow = function () {
+var startShow = function() {
     showPicture = setInterval(nextPicture, 2000);
+}
+
+// Clearing the interval
+var stopShow = function() {
+    clearInterval(showPicture);
 }
 
 // Calling functions to run the slideshow
