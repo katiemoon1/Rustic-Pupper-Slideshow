@@ -11,13 +11,14 @@ var showPicture;
 
 // Creating a function to show the pictures
 var displayPictures = function() {
-    $(".pupper-div").html("<img src=" + luxPhotos[count] + " height='500px' width='400px'>").fadeIn();
+    $(".pupper-div").html("<img src=" + luxPhotos[count] + " height='500px' width='400px'>");
+    $(".pupper-div").fadeIn("fast");
 }
 
 // Creating a function to go to the next picture after a set interval
 var nextPicture = function() {
     count++;
-    setTimeout(displayPictures, 2000);
+    setTimeout(displayPictures, 1000);
 
     if (count === luxPhotos.length) {
         count = 0;
@@ -26,7 +27,7 @@ var nextPicture = function() {
 
 // Creating a function to start the slideshow
 var startShow = function() {
-    showPicture = setInterval(nextPicture, 2000);
+    showPicture = setInterval(nextPicture, 3000);
 }
 
 // Clearing the interval
