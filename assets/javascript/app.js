@@ -11,7 +11,7 @@ var showPicture;
 
 // Creating a function to show the pictures
 var displayPictures = function() {
-    $(".pupper-div").html("<img src=" + luxPhotos[count] + " width='400px'>");
+    $(".pupper-div").html("<img src=" + luxPhotos[count] + " height='500px' width='400px'>").fadeIn();
 }
 
 // Creating a function to go to the next picture after a set interval

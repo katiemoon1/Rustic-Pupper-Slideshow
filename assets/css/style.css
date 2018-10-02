@@ -9,10 +9,17 @@ body {
 
 .photos {
     position: relative;
-    z-index: 1;
 }
 
-.pupper {
+.frame {
     position: absolute;
-    z-index: 3;
+    z-index: 1;
+    left: -50px;
+}
+
+.pupper-div {
+    position: absolute;
+    z-index: 2;
+    left: 35px;
+    top: 60px;
 }
